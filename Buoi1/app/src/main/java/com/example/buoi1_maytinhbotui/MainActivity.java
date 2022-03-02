@@ -246,7 +246,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 fixed.setLength(0);
                 fixedDisplay.setText(fixed);
-                Double tmp=soDau/100;
+                Double tmp;
+                if(value.length()==0)
+                    tmp=soDau/100;
+                else
+                    tmp=Double.parseDouble(value.toString())/100;
+                soDau=tmp;
                 value.setLength(0);
                 value.append(soDau.toString());
                 display.setText(tmp.toString());
@@ -258,7 +263,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 fixed.setLength(0);
                 fixedDisplay.setText(fixed);
-                Double tmp=Math.sqrt(soDau);
+                Double tmp;
+                if(value.length()==0)
+                    tmp=Math.sqrt(soDau);
+                else
+                    tmp=Math.sqrt(Double.parseDouble(value.toString()));
+                soDau=tmp;
                 value.setLength(0);
                 value.append(soDau.toString());
                 display.setText(tmp.toString());
@@ -270,7 +280,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 fixed.setLength(0);
                 fixedDisplay.setText(fixed);
-                Double tmp=1/soDau;
+                Double tmp;
+                if(value.length()==0)
+                    tmp=1/soDau;
+                else
+                    tmp=1/Double.parseDouble(value.toString());
+                soDau=tmp;
                 value.setLength(0);
                 value.append(soDau.toString());
                 display.setText(tmp.toString());
@@ -282,7 +297,12 @@ public class MainActivity extends AppCompatActivity {
             public void onClick(View view) {
                 fixed.setLength(0);
                 fixedDisplay.setText(fixed);
-                Double tmp=soDau*soDau;
+                Double tmp;
+                if(value.length()==0)
+                    tmp=soDau*soDau;
+                else
+                    tmp=Double.parseDouble(value.toString()) * Double.parseDouble(value.toString());
+                soDau=tmp;
                 value.setLength(0);
                 value.append(soDau.toString());
                 display.setText(tmp.toString());
