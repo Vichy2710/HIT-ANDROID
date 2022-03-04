@@ -5,6 +5,11 @@
       <map>
         <entry key="..\:/HIT/ANDROID/Buoi2/app/src/main/res/drawable/edittext_border.xml" value="0.26614583333333336" />
         <entry key="..\:/HIT/ANDROID/Buoi2/app/src/main/res/layout/activity_main.xml" value="0.2" />
+        <entry key="..\:/HIT/ANDROID/Buoi2/app/src/main/res/layout/activity_main2.xml" value="0.25" />
+        <entry key="..\:/HIT/ANDROID/Buoi2/app/src/main/res/layout/activity_main3.xml" value="0.2" />
+        <entry key="..\:/HIT/ANDROID/Buoi2/app/src/main/res/layout/activity_main4.xml" value="0.176" />
+        <entry key="..\:/HIT/ANDROID/Buoi2/app/src/main/res/layout/log_in.xml" value="0.176" />
+        <entry key="..\:/HIT/ANDROID/Buoi2/app/src/main/res/layout/sign_up.xml" value="0.25" />
       </map>
     </option>
   </component>
