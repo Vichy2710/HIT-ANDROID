@@ -1,16 +1,26 @@
 package com.example.myapplication;
 
 public class Dish{
+    private int id;
     private int dishImage;
     private String dishType;
     private String dishName;
     private String dishCost;
 
-    public Dish(int dishImage, String dishType, String dishName, String dishCost){
+    public Dish(int id, int dishImage, String dishType, String dishName, String dishCost) {
+        this.id = id;
         this.dishImage = dishImage;
         this.dishType = dishType;
         this.dishName = dishName;
         this.dishCost = dishCost;
+    }
+
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
     }
 
     public int getDishImage() {
