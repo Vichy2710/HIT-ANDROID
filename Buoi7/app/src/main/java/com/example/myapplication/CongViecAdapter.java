@@ -74,6 +74,14 @@ public class CongViecAdapter extends BaseAdapter {
                 context.dialog_erase_note(congViec.getId());
             }
         });
+
+        view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                context.dialog_show_note(congViec.getTen());
+            }
+        });
+
         return view;
     }
 }

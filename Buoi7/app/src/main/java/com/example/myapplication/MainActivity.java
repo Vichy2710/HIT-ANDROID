@@ -12,6 +12,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.GridLayout;
 import android.widget.GridView;
+import android.widget.ImageView;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -110,6 +111,24 @@ public class MainActivity extends AppCompatActivity {
         });
 
         cancel_btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                dialog.dismiss();
+            }
+        });
+        dialog.show();
+    }
+
+    public void dialog_show_note(String ten){
+        Dialog dialog = new Dialog(this);
+        dialog.setContentView(R.layout.show_note);
+        dialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
+
+        TextView textView = dialog.findViewById(R.id.show_note);
+        ImageView imageView = dialog.findViewById(R.id.quit_btn);
+
+        textView.setText(ten);
+        imageView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 dialog.dismiss();

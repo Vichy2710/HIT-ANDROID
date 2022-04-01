@@ -25,7 +25,10 @@
         android:minLines="2"
         android:gravity="top|start"
         android:scrollbars="vertical"
-        android:textSize="16dp"></EditText>
+        android:textSize="16dp"
+        android:backgroundTint="#4E4343"
+
+        android:textCursorDrawable="@null"></EditText>
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
